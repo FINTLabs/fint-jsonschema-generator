@@ -1,0 +1,13 @@
+*.test
+.idea
+.DS_Store
+/java/
+/cs/
+*.xml
+build
+/fint-jsonschema-generator*
+*.orig
+.vscode/
+classes.txt
+/graphql/
+/json/
