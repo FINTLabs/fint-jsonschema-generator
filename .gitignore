@@ -9,5 +9,4 @@ build
 *.orig
 .vscode/
 classes.txt
-/graphql/
 /json/
