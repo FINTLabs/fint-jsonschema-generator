@@ -48,7 +48,8 @@ func writeFile(path string, filename string, content []byte) error {
 }
 
 func includePackage(p string) bool {
-	return strings.Contains(p, "administrasjon") || strings.Contains(p, "utdanning") || strings.Contains(p, "felles")
+	//return strings.Contains(p, "administrasjon") || strings.Contains(p, "utdanning") || strings.Contains(p, "felles")
+	return true
 }
 
 func setupJSONSchemaDirStructure() {

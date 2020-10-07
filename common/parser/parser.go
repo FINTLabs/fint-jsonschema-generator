@@ -13,7 +13,7 @@ import (
 )
 
 func GetClasses(owner string, repo string, tag string, filename string, force bool) ([]*types.Class, map[string]types.Import, map[string][]*types.Class, map[string][]*types.Class) {
-	fmt.Print("Fetching document ...")
+	fmt.Printf("Fetching document %s/%s/%s @ %s ...", owner, repo, filename, tag)
 	doc, err := document.Get(owner, repo, tag, filename, force)
 	if err != nil {
 		return nil, nil, nil, nil
