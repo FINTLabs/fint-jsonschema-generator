@@ -6,7 +6,7 @@ var JSON_TYPE_MAP = map[string]string{
 	"string":    `"string"`,
 	"boolean":   `"boolean"`,
 	"date":      `"string", "format": "date-time"`,
-	"dateTime":  `"string", "format": "date-time"`,
+	"datetime":  `"string", "format": "date-time"`,
 	"float":     `"number"`,
 	"double":    `"number"`,
 	"long":      `"integer"`,
@@ -18,7 +18,7 @@ func GetJsonType(att *Attribute) string {
 
 	result := att.Type
 
-	value, ok := JSON_TYPE_MAP[att.Type]
+	value, ok := JSON_TYPE_MAP[strings.ToLower(att.Type)]
 	if ok {
 		result = value
 	} else {
