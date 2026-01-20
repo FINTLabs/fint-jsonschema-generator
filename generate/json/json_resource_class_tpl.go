@@ -17,9 +17,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-import no.fint.model.{{ javaType .Stereotype }};
-import no.fint.model.resource.FintLinks;
-import no.fint.model.resource.Link;
+import no.novari.fint.model.{{ javaType .Stereotype }};
+import no.novari.fint.model.resource.FintLinks;
+import no.novari.fint.model.resource.Link;
 
 {{- if .Imports -}}
 {{ range $i := .Imports }}

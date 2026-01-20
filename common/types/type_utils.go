@@ -15,5 +15,5 @@ func getType(list bool, t string) string {
 }
 
 func GetComponentName(pkg string) string {
-	return strings.ToLower(strings.Split(pkg, ".")[3])
+	return strings.ToLower(strings.Split(pkg, ".")[4])
 }
